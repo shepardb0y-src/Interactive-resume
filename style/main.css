@@ -84,7 +84,31 @@ div h1 {
 .skill-highlight ul li {
   margin: 2%;
 }
-.para {
+.skill-highlight a {
+  text-decoration: none;
+  color: black;
+}
+#dropdown {
+  text-decoration: none;
+  padding: 1%;
+  margin: 1%;
+}
+#dropdown:hover {
+  background-color: paleturquoise;
+}
+#dropdown:hover #dropdown-menu {
+  display: block;
+}
+
+#dropdown-menu {
+  display: none;
+  /* width: 150px; */
+  /* position: absolute; */
+  background-color: lightslategray;
+  /* left: 63px; */
+  /* text-align: left; */
+  /* padding-left: 5px; */
+  color: white;
 }
 
 .contact {

@@ -1,96 +1,85 @@
 * {
-  /* background-color: black; */
-  /* border: black solid 1px; */
   margin: 0;
-  max-width: 80%;
   padding: 0;
-  margin-left: 8%;
-  background-color: lightcyan;
-}
-html {
-  font-size: 67.5%;
-  /* background: url("https://wallpapercave.com/wp/wp2487379.jpg") 100% fixed; */
+  box-sizing: border-box;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: darkblue;
+/* body {
+  background: url() cover;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+} */
+.body {
+  background: url(/img/hero-background.png);
 }
-main {
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 80%;
+  min-height: 1000px;
+  background-color: wheat;
+  margin: 50px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  box-shadow: 0 35px 55px rgb(0, 0, 0, 0.8);
+}
+.container .left-side {
+  position: relative;
+  background: violet;
+  padding: 40px;
+}
+.profile-text {
+  position: relative;
   display: flex;
-  margin-top: 2.5%;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid lightgrey;
 }
-body {
-  font-size: 1.7rem;
-}
-
-img {
-  border-radius: 90%;
-  margin-bottom: 30%;
-  margin-left: 4%;
-}
-
-.section {
-  /* background-color: blue; */
-  background-color: lightgreen;
+.profile-text .img {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
 }
 
-.aside {
-  box-sizing: border-box;
-  /* background-color: red; */
-  width: 20%;
+.profile-text .img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-.aside h1 {
-  margin-bottom: 40%;
-  margin-left: 14%;
-  text-decoration: none;
-  color: blue;
-}
-.summary {
-  margin-bottom: 2%;
-  /* margin-top: 2%; */
-}
-.section {
-  margin-left: 5%;
-}
-.expierence,
-.expierence ul,
-.education,
-.certifications,
-.skill-highlight ul {
-  margin-bottom: 1%;
-  font-size: 1.6rem;
-  list-style: none;
-}
-.expierence {
-  margin-left: 4%;
-  /* font-size: 1.5rem; */
-}
-.Languages {
-  margin-left: 10%;
+.profile-text h2 {
+  color: white;
+  font-size: 1.5rem;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.4rem;
 }
 
-div h1 {
-  animation-name: fromLeft;
-  animation-duration: 3s;
+.container .right-side {
+  position: relative;
+  background: peachpuff;
+  padding: 40px;
 }
-.skill-highlight ul {
-  /* display: flex; */
-  /* list-style-type: none; */
-  /* font-size: 1.3rem; */
+.right-side ul li {
+  list-style-type: none;
 }
-.skill-highlight ul li {
-  margin: 2%;
+.left-side ul li {
+  list-style-type: none;
 }
-.skill-highlight a {
-  text-decoration: none;
-  color: black;
+.img {
+  /* width: 100%;
+  border-radius: 90%; */
+  box-shadow: 0 35px 55px rgb(0, 0, 0, 0.5);
 }
+
 #dropdown {
   text-decoration: none;
   padding: 1%;
@@ -114,36 +103,6 @@ div h1 {
   color: white;
 }
 
-.contact {
-  margin-bottom: 20%;
-  margin-left: 14%;
-}
-.contact ul,
-.Languages ol,
-.education ul {
-  list-style: none;
-}
-
-.Languages ol {
-  margin-left: 14%;
-}
-
-@keyframes fromLeft {
-  0% {
-    opacity: 0%;
-    transform: translateX(50%);
-  }
-  100% {
-    opacity: 1;
-    transform: translate3d(0);
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  main {
-    display: block;
-  }
-  .aside {
-    margin-left: 35%;
-  }
+.contact-info img {
+  clip-path: circle(25px);
 }

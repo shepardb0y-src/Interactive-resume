@@ -2,8 +2,10 @@
   /* background-color: black; */
   /* border: black solid 1px; */
   margin: 0;
-  max-width: 100%;
+  max-width: 80%;
   padding: 0;
+  margin-left: 8%;
+  background-color: lightcyan;
 }
 html {
   font-size: 67.5%;
@@ -35,6 +37,7 @@ img {
 
 .section {
   /* background-color: blue; */
+  background-color: lightgreen;
 }
 
 .aside {
@@ -50,7 +53,7 @@ img {
 }
 .summary {
   margin-bottom: 2%;
-  margin-top: 2%;
+  /* margin-top: 2%; */
 }
 .section {
   margin-left: 5%;
